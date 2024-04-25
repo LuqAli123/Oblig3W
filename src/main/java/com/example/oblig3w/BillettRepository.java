@@ -10,11 +10,11 @@ import java.util.List;
 public class BillettRepository {
     @Autowired
     private JdbcTemplate db;
-    public void lagreKunde(Billett billettRegister){
-        String sql = "INSERT INTO Billett(fornavn,etternavn,film,epos,adresse,mobilnummer,id)"+
+    public void lagreKunde(Billett film){
+        String sql = "INSERT INTO Billett(fornavn,etternavn,film,epost,adresse,mobilnummer)"+
                 "VALUES(?,?,?,?,?,?);";
-        db.update(sql,billettRegister.getFornavn(),billettRegister.getEtternavn(),billettRegister.getFilm(),
-                billettRegister.getEpost(),billettRegister.getAdresse(),billettRegister.getMobilnummer(),billettRegister.getId());
+        db.update(sql,film.getFornavn(),film.getEtternavn(),film.getFilm(),
+                film.getEpost(),film.getAdresse(),film.getMobilnummer());
     }
     public List<Billett> hentAlt(){
         String sql = "SELECT*FROM Billett GROUP BY fornavn";

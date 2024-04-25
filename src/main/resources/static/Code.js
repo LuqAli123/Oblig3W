@@ -1,3 +1,4 @@
+
 function feilMelding(){
     let valid = true;
     $("#feil1").html("");
@@ -12,6 +13,12 @@ function feilMelding(){
 function kjopBillett(){
     feilMelding();
     let valid = true;
+    let validTicket = true;
+    let film = $("#film").val();
+    let antall =$("#antall").val();
+    let fornavn = $("#fornavn").val();
+    let etternavn = $("#etternavn").val();
+    let adresse = $("#adresse").val();
 
     if (film === "") {
         valid  = false;
@@ -68,7 +75,7 @@ function kjopBillett(){
     }else {
         $("#feil7").html("");
     }
-    if (valid){
+    if(valid){
         const billett={
             film : $("#film").val(),
             antall : $("#antall").val(),
@@ -81,7 +88,10 @@ function kjopBillett(){
         $.post("/lagreKunde", billett, function (){
             hentAlle();
 
+        }).fail(function(jqXHR, textStatus, error) {
+            console.log("Post failed: " + textStatus + ", " + error);
         });
+
 
     }
 }
@@ -122,16 +132,11 @@ function settFeil(elementId, melding){
 //Mobilnummer validering
 function valMobilnummer(mobilnummer){
     let regx =/^[0-9]{8}$/;
-    if (regx.test(mobilnummer)){
-        return true;
-    }
+    return !regx.test(mobilnummer)
 }
 
 //E-post validering
 function valEpost(epost){
     let regx = /^[a-z A-Z0-9.-]+@[a-z]+\.[a-zA-Z]{2,}$/;
-    if (regx.test(epost)){
-        return true;
-    }
-
+    return !regx.test(epost);
 }
