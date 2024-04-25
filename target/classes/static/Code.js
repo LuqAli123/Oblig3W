@@ -139,7 +139,8 @@ function slettBillett(){
     });
     feilMelding();
 }
-//sletter bare i databasen, men ikke visuelt på nettsiden
+//sletter bare i databasen, men ikke visuelt på nettsiden.
+//fikk hjelp av sikt ki chat med  denne.
 function slettEn(id){
     const url ="/slettEn?id=" +id;
     $.ajax({

@@ -125,8 +125,8 @@ function hentData(format){
             "</td><td>" + billett.fornavn + "</td><td>"
             + billett.etternavn + "</td><td>" + billett.adresse + "</td><td>" + billett.mobilnummer +
             "</td><td>" + billett.epost + "</td>"+
-            "<td><button class='btn btn-primary' onclick='slettEn("+billett.id+")'>Slett</button></td>"+
-            "<td><button class='btn btn-primary' onclick='endre("+billett.id+")'>Endre</button></td>"
+            "<td><button class='btn btn-primary' onclick='slettEn("+billett.id+")'>Slett</button></td>"
+           // "<td><button class='btn btn-primary' onclick='endre("+billett.id+")'>Endre</button></td>"
         ut += "</tr>";
     }
     ut += "</table>";
@@ -151,19 +151,19 @@ function slettEn(id){
       }
     })
 }
-function henteEn(id){
-    const url = "/henteEn?id="+id;
-    $.get(url,function (enBillett){
-        $("#id").val(enBillett.id);
-        $("#film").val(enBillett.film);
-        $("#antall").val(enBillett.antall);
-        $("#fornavn").val(enBillett.fornavn);
-        $("#etternavn").val(enBillett.etternavn);
-        $("#adresse").val(enBillett.adresse);
-        $("#mobilnummer").val(enBillett.mobilnummer);
-        $("#epost").val(enBillett.epost);
-    })
-}
+//function henteEn(id){
+  //  const url = "/henteEn?id="+id;
+    //$.get(url,function (enBillett){
+      //  $("#id").val(enBillett.id);
+        //$("#film").val(enBillett.film);
+      //  $("#antall").val(enBillett.antall);
+        //$("#fornavn").val(enBillett.fornavn);
+        //$("#etternavn").val(enBillett.etternavn);
+        //$("#adresse").val(enBillett.adresse);
+        //$("#mobilnummer").val(enBillett.mobilnummer);
+        //$("#epost").val(enBillett.epost);
+    //})
+//}
 //endre knappen/funksjonen funker ikke
 function endre(){
     const billett = {
