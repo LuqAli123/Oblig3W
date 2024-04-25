@@ -4,16 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90c25c5b-1049-44dd-9d39-9a55bf07e201" name="Changes" comment="bootstrap lagt til i html filen">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oblig3w/BillettController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oblig3w/BillettController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/oblig3w/BillettRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/oblig3w/BillettRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/Code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/oblig3w/BillettController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/oblig3w/BillettController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/oblig3w/BillettRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/oblig3w/BillettRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/Code.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/Code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/Index.html" afterDir="false" />
+    <list default="true" id="90c25c5b-1049-44dd-9d39-9a55bf07e201" name="Changes" comment="Liten kommentar endring">
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/oblig3w/Billett.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/oblig3w/BillettController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/oblig3w/BillettRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/oblig3w/Oblig3WApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/Code.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/Index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/oblig3w/Oblig3WApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +98,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713957153116</updated>
-      <workItem from="1713957154548" duration="37110000" />
+      <workItem from="1713957154548" duration="37442000" />
     </task>
     <task id="LOCAL−00001" summary="alle filer">
       <option name="closed" value="true" />
@@ -135,7 +135,21 @@
       <option name="presentableId" value="LOCAL−00005" />
       <updated>1714057310366</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL−00006" summary="Readme og generelle endringer i slett  knapp og js-kode">
+      <option name="closed" value="true" />
+      <created>1714075628909</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1714075628910</updated>
+    </task>
+    <task id="LOCAL−00007" summary="Liten kommentar endring">
+      <option name="closed" value="true" />
+      <created>1714075880530</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1714075880532</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +172,8 @@
     <MESSAGE value="." />
     <MESSAGE value="415 alert fikset feil i lagreKunde sql og $.post endret til $.ajax" />
     <MESSAGE value="bootstrap lagt til i html filen" />
-    <option name="LAST_COMMIT_MESSAGE" value="bootstrap lagt til i html filen" />
+    <MESSAGE value="Readme og generelle endringer i slett  knapp og js-kode" />
+    <MESSAGE value="Liten kommentar endring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Liten kommentar endring" />
   </component>
 </project>
