@@ -124,8 +124,7 @@ function hentData(format){
         ut += "<tr><td>" + billett.film + "</td><td>" + billett.antall +
             "</td><td>" + billett.fornavn + "</td><td>"
             + billett.etternavn + "</td><td>" + billett.adresse + "</td><td>" + billett.mobilnummer +
-            "</td><td>" + billett.epost + "</td>"+
-            "<td><button class='btn btn-primary' onclick='slettEn("+billett.id+")'>Slett</button></td>"
+            "</td><td>" + billett.epost + "</td>"
         ut += "</tr>";
     }
     ut += "</table>";
