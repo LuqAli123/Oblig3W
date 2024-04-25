@@ -11,9 +11,9 @@ public class BillettRepository {
     @Autowired
     private JdbcTemplate db;
     public void lagreKunde(Billett film){
-        String sql = "INSERT INTO Billett(fornavn,etternavn,film,epost,adresse,mobilnummer)"+
-                "VALUES(?,?,?,?,?,?);";
-        db.update(sql,film.getFornavn(),film.getEtternavn(),film.getFilm(),
+        String sql = "INSERT INTO Billett(antall,fornavn,etternavn,film,epost,adresse,mobilnummer)"+
+                "VALUES(?,?,?,?,?,?,?);";
+        db.update(sql,film.getAntall(),film.getFornavn(),film.getEtternavn(),film.getFilm(),
                 film.getEpost(),film.getAdresse(),film.getMobilnummer());
     }
     public List<Billett> hentAlt(){

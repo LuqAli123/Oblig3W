@@ -85,14 +85,27 @@ function kjopBillett(){
             mobilnummer : $("#mobilnummer").val(),
             epost : $("#epost").val(),
         };
-        $.post("/lagreKunde", billett, function (){
-            hentAlle();
-
-        }).fail(function(jqXHR, textStatus, error) {
-            console.log("Post failed: " + textStatus + ", " + error);
+        $.ajax({
+            url: '/lagreKunde',
+            type: 'POST',
+            data: JSON.stringify(billett), // gjør om billett-objektet til en JSON-streng
+            contentType: 'application/json', // setter Content-Type til application/json
+            success: function() {
+                hentAlle();
+                // kode som kjører når forespørselen er vellykket
+            },
+            error: function(error) {
+                // kode som kjører når det er en feil
+                console.log(error);
+            }
         });
-
-
+        $("#film").val("Velg film");
+        $("#antall").val("");
+        $("#fornavn").val("");
+        $("#etternavn").val("");
+        $("#adresse").val("");
+        $("#mobilnummer").val("");
+        $("#epost").val("");
     }
 }
 function hentAlle(){
