@@ -17,7 +17,7 @@ public class BillettRepository {
                 film.getEpost(),film.getAdresse(),film.getMobilnummer());
     }
     public List<Billett> hentAlt(){
-        String sql = "SELECT*FROM Billett GROUP BY fornavn";
+        String sql = "SELECT*FROM Billett";
         List<Billett>billettRegister = db.query(sql, new BeanPropertyRowMapper(Billett.class));
 
         return billettRegister;
@@ -37,8 +37,8 @@ public class BillettRepository {
         String sql = "DELETE FROM Billett;";
         db.update(sql);
     }
-    public void slettEn(long mobillnummer){
+    public void slettEn(long id){
         String sql = "DELETE FROM Billett WHERE id=?;";
-        db.update(sql,mobillnummer);
+        db.update(sql,id);
     }
 }

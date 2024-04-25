@@ -2,10 +2,7 @@ package com.example.oblig3w;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 @RestController
@@ -26,15 +23,17 @@ public class BillettController {
         rep.slettAlle();
     }
     @GetMapping("/slettEn")
-    public void slettEn(int id){
+    public void slettEn(@RequestParam("id") Long id){
+        if (id!=null) {
         rep.slettEn(id);
+        }
     }
     @PostMapping("/endring")
     public void endre(Billett billett){
         rep.endreBillett(billett);
     }
     @GetMapping("/henteEn")
-    public Billett hentEn(int id){
+    public Billett hentEn(Integer id){
         return rep.henteBillett(id);
     }
 }

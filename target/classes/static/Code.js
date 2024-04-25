@@ -124,7 +124,9 @@ function hentData(format){
         ut += "<tr><td>" + billett.film + "</td><td>" + billett.antall +
             "</td><td>" + billett.fornavn + "</td><td>"
             + billett.etternavn + "</td><td>" + billett.adresse + "</td><td>" + billett.mobilnummer +
-            "</td><td>" + billett.epost + "</td>"
+            "</td><td>" + billett.epost + "</td>"+
+            "<td><button class='btn btn-primary' onclick='slettEn("+billett.id+")'>Slett</button></td>"+
+            "<td><button class='btn btn-primary' onclick='endre("+billett.id+")'>Endre</button></td>"
         ut += "</tr>";
     }
     ut += "</table>";
@@ -137,10 +139,31 @@ function slettBillett(){
     });
     feilMelding();
 }
+//sletter bare i databasen, men ikke visuelt på nettsiden
 function slettEn(id){
-    const ur ="/slettEn?id="+id;
-    $.get(ur,function (){});
+    const url ="/slettEn?id=" +id;
+    $.ajax({
+      url: url,
+      type: 'GET',
+      success:function (result){
+          console.log('slettEn:success',result)
+      }
+    })
 }
+function henteEn(id){
+    const url = "/henteEn?id="+id;
+    $.get(url,function (enBillett){
+        $("#id").val(enBillett.id);
+        $("#film").val(enBillett.film);
+        $("#antall").val(enBillett.antall);
+        $("#fornavn").val(enBillett.fornavn);
+        $("#etternavn").val(enBillett.etternavn);
+        $("#adresse").val(enBillett.adresse);
+        $("#mobilnummer").val(enBillett.mobilnummer);
+        $("#epost").val(enBillett.epost);
+    })
+}
+//endre knappen/funksjonen funker ikke
 function endre(){
     const billett = {
         id :$("id").val(),
@@ -152,7 +175,7 @@ function endre(){
         mobilnummer :$("mobilnummer").val(),
         epost :$("epost").val(),
     }
-    $.get("/endring",function (){
+    $.get("/endring",billett, function (){
 
     })
 }
