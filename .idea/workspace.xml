@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90c25c5b-1049-44dd-9d39-9a55bf07e201" name="Changes" comment="Liten kommentar endring">
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/oblig3w/Billett.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/oblig3w/BillettController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/oblig3w/BillettRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/oblig3w/Oblig3WApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/schema.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/Code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/Index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/oblig3w/Oblig3WApplicationTests.class" beforeDir="false" />
+    <list default="true" id="90c25c5b-1049-44dd-9d39-9a55bf07e201" name="Changes" comment="mvn clean install">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/Index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +90,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713957153116</updated>
-      <workItem from="1713957154548" duration="37442000" />
+      <workItem from="1713957154548" duration="37721000" />
     </task>
     <task id="LOCAL−00001" summary="alle filer">
       <option name="closed" value="true" />
@@ -149,7 +141,14 @@
       <option name="presentableId" value="LOCAL−00007" />
       <updated>1714075880532</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL−00008" summary="mvn clean install">
+      <option name="closed" value="true" />
+      <created>1714075954673</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1714075954673</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +173,7 @@
     <MESSAGE value="bootstrap lagt til i html filen" />
     <MESSAGE value="Readme og generelle endringer i slett  knapp og js-kode" />
     <MESSAGE value="Liten kommentar endring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Liten kommentar endring" />
+    <MESSAGE value="mvn clean install" />
+    <option name="LAST_COMMIT_MESSAGE" value="mvn clean install" />
   </component>
 </project>
